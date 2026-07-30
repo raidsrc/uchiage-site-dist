@@ -3,23 +3,40 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./assets/obamium-BCV9S2La.jpeg" />
+  <link rel="icon" type="image/svg+xml" href="./obamium.jpeg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Uchiage - 打ち上げ - The OffKai House Band</title>
-  <script type="module" crossorigin src="./assets/index-DRTRVAYD.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-_tLzpEJO.css">
+  <script type="module" crossorigin src="./assets/index-CB0-Q-VL.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BrBquqJA.css">
 </head>
 
 <body>
   <main>
     <section id="hero" class="big-video">
-      <div id="sick-text-1">
+      <div class="sick-text-1 sick-text">
         UCHIAGE
       </div>
-      <div id="sick-text-2">
+      <div id="sick-text-1-copy" class="sick-text-1">
+        UCHIAGE
+      </div>
+
+      <div class="sick-text-1-mobile sick-text">
+        UCHI<br/>AGE
+      </div>
+      <div id="sick-text-1-mobile-copy" class="sick-text-1-mobile">
+        UCHI<br/>AGE
+      </div>
+
+      <div class="sick-text-2 sick-text">
         打ち上げ
       </div>
-      <div id="sick-text-3">
+      <div id="sick-text-2-copy" class="sick-text-2">
+        打ち上げ
+      </div>
+      <div class="sick-text-3 sick-text">
+        &ldquo;The OffKai House Band&rdquo;
+      </div>
+      <div id="sick-text-3-copy" class="sick-text-3">
         &ldquo;The OffKai House Band&rdquo;
       </div>
     </section>
@@ -34,23 +51,37 @@
       </div>
       <div>
         <ol>
-          <li>In performing arts contexts, a celebratory party held after a successful show.</span></li>
+          <li>A celebratory party held after a successful show¹.</span></li>
           <li class="drop-shadow">The greatest live North American VTuber/vocaloid/anime music supergroup in history.
           </li>
           <li class="lower-opacity-text">The only live North American VTuber/vocaloid/anime music supergroup in history.
           </li>
         </ol>
       </div>
+      <div class="tiny-text">
+        ¹In the context of performing arts in Japanese culture.
+      </div>
     </section>
     <section id="concert-cta" class="big-video">
       <div id="cta">
-        <p>Some shit goes here. And the background is concert video. Blah blah, the band is very cool. We did the OffKai
-          Relay Carousel Concert. Now book us
-          for more shows and pay us too. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, ducimus
-          suscipit
-          illum possimus cumque, minima quae similique aliquam molestias nobis repudiandae? </p>
+        <p>
+          Known for massively-successful debut live performances at <a
+            href="https://offkaiexpo.com/event/oke2026-raki-kazuki-and-lazuli-surge-3d-live-musical/">SURGE! 3D Live
+            Musical</a> and <a href="https://offkaiexpo.com/event/oke2026-offkai-relay/">
+            OffKai Relay: Carousel
+            Concert</a>, fan-favorite supergroup Uchiage sees absolutely no limits to its potential. Established in
+          2026, the
+          group formed after <span id="nimo-harrison-text-mentioned">two OffKai Expo staff members</span> (who are now
+          members of the band) had a few drinks and then
+          decided to pitch the idea of 'live band plus Vtuber vocalist' to the OffKai upper brass. Uchiage
+          synthesizes the talents and breadth of musical expertise of the instrumentalists from multiple
+          pre-established
+          North American music groups. <a href="">Petty Tactic</a>. <a href="">Project Mikan</a>. <a href="">Aimai
+            Mirai</a>. And more. Fans from all over the world can't wait to see which direction Uchiage will launch off
+          to next.
+        </p>
         <div class="cta-text">
-          Get us on your project.
+          Get Uchiage on your next cover, original, live show, or other project.
         </div>
         <button class="cta-button">
           Contact
@@ -59,8 +90,6 @@
 
     </section>
     <section id="members">
-      <!-- <p>Known for massively-successful live performances such as SURGE! 3D Live Musical and OffKai Relay: Carousel Concert, acclaimed supergroup Uchiage (also known as the OffKai House Band) has just begun and sees no limits to its potential. Established in 2026, the group formed alsdkjfaskldjf from the union of Petty Tactic, Project Mikan, and Aimai Mirai </p> -->
-
       <h1>The band</h1>
       <!-- just this part is react. react start. -->
       <div id="band-grid"></div>
@@ -71,10 +100,10 @@
     <section id="final-cta" class="big-image">
       <div id="cta">
         <div class="cta-text">
-          Get in touch with us.
+          Don't be a stranger.
         </div>
         <button class="cta-button">
-          Contact
+          Hit us up
         </button>
       </div>
     </section>
@@ -87,5 +116,25 @@
   </footer>
 </body>
 
+<script defer>
+  const nimoHarrisonGlowText = document.getElementById("nimo-harrison-text-mentioned")
+  nimoHarrisonGlowText.addEventListener("mouseover", () => {
+    // find element that's nimo, find element that's harrison
+    // apply glow style to their image
+    const nimoImg = document.getElementById("ninomae nimo-img")
+    const harrisonImg = document.getElementById("harrison fjord-img")
+    nimoImg.className += " nimo-harrison-glow"
+    harrisonImg.className += " nimo-harrison-glow"
+  })
+  nimoHarrisonGlowText.addEventListener("mouseout", () => {
+    // find element that's nimo and harrison
+    // remove glow style from image 
+    const nimoImg = document.getElementById("ninomae nimo-img")
+    const harrisonImg = document.getElementById("harrison fjord-img")
+    nimoImg.className = nimoImg.className.replace(" nimo-harrison-glow", "")
+    harrisonImg.className = harrisonImg.className.replace(" nimo-harrison-glow", "")
+  })
+
+</script>
 
 </html>
