@@ -6,35 +6,35 @@
 
 @font-face {
   font-family: 'AkzidenzGrotesk';
-  src: url('./Akzidenz-grotesk-roman.ttf');
+  src: url('../fonts/Akzidenz-grotesk-roman.ttf');
 }
 
 @font-face {
   font-family: 'AkzidenzGrotesk';
   font-weight: 600;
-  src: url('./Akzidenz-grotesk-bold.ttf');
+  src: url('../fonts/Akzidenz-grotesk-bold.ttf');
 }
 
 @font-face {
   font-family: 'Neue Haas Grotesk';
-  src: url('./NHaasGroteskTXPro-55Rg.ttf');
+  src: url('../fonts/NHaasGroteskTXPro-55Rg.ttf');
 }
 
 @font-face {
   font-family: 'Neue Haas Grotesk';
   font-weight: 600;
-  src: url('./NHaasGroteskTXPro-65Md.ttf');
+  src: url('../fonts/NHaasGroteskTXPro-65Md.ttf');
 }
 
 @font-face {
   font-family: 'Helvetica';
-  src: url('./helvetica.ttf');
+  src: url('../fonts/helvetica.ttf');
 }
 
 @font-face {
   font-family: 'Helvetica';
   font-weight: 600;
-  src: url('./helvetica-bold.ttf');
+  src: url('../fonts/helvetica-bold.ttf');
 }
 
 body {
@@ -150,12 +150,25 @@ a {
   position: relative;
   font-size: 4rem;
   font-weight: 800;
-  background: url("./test-hero.jpg");
+  /* background: url("./test-hero.jpg"); */
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 0 100%);
 }
 
 #hero.big-video {
   height: 76rem;
+}
+
+#hero {
+  overflow: hidden;
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    height: 110%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .sick-text {
@@ -804,6 +817,7 @@ footer {
   #final-cta {
     #cta {
       padding-left: 2rem;
+      width: 50%;
     }
 
     .cta-text {}

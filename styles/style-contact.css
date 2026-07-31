@@ -27,3 +27,24 @@ p {
   text-align: center;
   padding-bottom: 20rem;
 }
+
+@media (max-width: 1080px) {
+  h1 {
+    font-size: 5rem;
+  }
+  main {
+    padding: 0 1rem;
+  }
+  .contact-div {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 512px) {
+  h1 {
+    font-size: 3rem;
+  }
+  main{
+    font-size: 1rem;
+  }
+}
