@@ -10,12 +10,17 @@ p {
   font-family: "neue haas grotesk";
 }
 
+main {
+  position: relative;
+}
+
 .main-section {
   display: flex;
   width: 100%;
   justify-content: center;
-  min-height: 16rem;
+  min-height: 10rem;
   align-items: center;
+  padding-top: 2rem;
 }
 
 .contact-div {
@@ -25,7 +30,19 @@ p {
 
 .return-section {
   text-align: center;
-  padding-bottom: 20rem;
+  height: 4rem;
+  min-height: 10rem;
+  padding-top: 3rem;
+}
+
+#contact-spacer {
+  height: calc(100vh - 36rem);
+}
+
+footer {
+  min-width: 18rem;
+  padding: 2rem 1rem;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 1080px) {

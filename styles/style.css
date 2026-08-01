@@ -40,7 +40,7 @@
 body {
   /* line-height: 1.5; */
   font-size: 1.25rem;
-  color: #ddd;
+  color: #e7e7e7;
   background-color: #202020;
   /* font-family: 'inter', 'ibm plex sans', 'sans-serif'; */
   font-family: 'Helvetica', 'sans-serif';
@@ -67,14 +67,15 @@ a {
   font-size: 0.8rem;
   text-align: center;
   display: flex;
-  
+
   .en-jp-text {
     position: relative;
     text-align: center;
     padding-bottom: 0.3rem;
   }
+
   label {
-    position: fixed; 
+    position: fixed;
     z-index: 10;
     background-color: #202020;
     padding: 0.6rem;
@@ -83,6 +84,7 @@ a {
     opacity: 10%;
     transition: opacity 200ms;
   }
+
   label:hover {
     opacity: 100%;
   }
@@ -160,6 +162,7 @@ a {
 
 #hero {
   overflow: hidden;
+
   video {
     position: absolute;
     top: 50%;
@@ -171,83 +174,78 @@ a {
   }
 }
 
-.sick-text {
+.invert {
   mix-blend-mode: difference;
-  /* opacity: 0; */
 }
 
-.sick-text-1 {
+.sick-text-copies {
+  /* color: white; */
+  color: transparent;
+  position: absolute;
+}
+
+.sick-text-1-group {
   font-size: 32rem;
   text-align: justify;
   padding: 0 1rem;
-  transition: opacity 300ms;
-  opacity: 100%;
-  color: white;
   font-family: 'Helvetica';
 }
 
-.sick-text-1:hover {
-  opacity: 0;
-}
-
 #sick-text-1-copy {
-  color: white;
-  position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
+  transition: color 400ms;
 }
 
-.sick-text-1-mobile {
+#sick-text-1-copy:hover {
+  color: white;
+}
+
+.sick-text-1-mobile-group {
   display: none;
   font-family: 'Helvetica';
 }
 
-.sick-text-2 {
+.sick-text-2-group {
   /* dis japanese */
-  position: absolute;
-  top: 32rem;
-  right: 0;
   font-size: 20rem;
   text-align: justify;
   padding: 0 1rem;
-  transition: opacity 400ms;
-  opacity: 100%;
-  color: white;
   font-family: 'Helvetica';
-}
 
-.sick-text-2:hover {
-  opacity: 0;
-}
-
-.sick-text-2-copy {
-  color: white;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 32rem;
+  right: 0;
+  left: unset;
 }
 
-.sick-text-3 {
+#sick-text-2-copy {
+  position: absolute;
+  z-index: 2;
+  transition: color 300ms;
+}
+
+#sick-text-2-copy:hover {
+  color: white;
+}
+
+.sick-text-3-group {
   position: absolute;
   bottom: 3rem;
   font-size: 12rem;
   text-align: justify;
   padding: 0 1rem;
-  transition: opacity 600ms;
-  opacity: 100%;
-  color: white;
   font-family: 'Helvetica';
 }
 
-.sick-text-3:hover {
-  opacity: 0;
+#sick-text-3-copy {
+  z-index: 2;
+  transition: color 300ms;
 }
 
-.sick-text-3-copy {
+#sick-text-3-copy:hover {
   color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 #dictionary {
@@ -289,7 +287,7 @@ a {
 }
 
 .lower-opacity-text {
-  opacity: 5%;
+  opacity: 8%;
 }
 
 #concert-cta {
@@ -298,6 +296,29 @@ a {
   display: flex;
   flex-direction: column;
   align-items: end;
+
+  a {
+    text-decoration: underline;
+    transition: opacity 100ms;
+  }
+  a:hover {
+    opacity: 80%;
+  }
+
+  .clip-text {
+    color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0px 1px 0.5px black);
+  }
+
+  .surge-3d-live-musical {
+    background-image: linear-gradient(to right, #fc80bc, #7aecfc);
+
+  }
+
+  .okr-cc {
+    background-image: linear-gradient(to right, #e18fe3, #9e1f53);
+  }
 
   #cta {
     width: 40rem;
@@ -311,12 +332,13 @@ a {
 
     p {
       text-align: right;
+      margin: 1rem 0;
     }
   }
 
   .cta-text {
     text-align: right;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -504,13 +526,13 @@ footer {
     height: 72rem;
   }
 
-  .sick-text-1 {
+  .sick-text-1-group {
     font-size: 20vw;
     text-align: justify;
     padding: 0 1rem;
   }
 
-  .sick-text-2 {
+  .sick-text-2-group {
     /* dis japanese */
     position: absolute;
     top: 30rem;
@@ -520,10 +542,10 @@ footer {
     padding: 0 1rem;
   }
 
-  .sick-text-3 {
+  .sick-text-3-group {
     position: absolute;
     bottom: 2rem;
-    font-size: 8vw;
+    font-size: 7.5vw;
     text-align: justify;
     padding: 0 1rem;
   }
@@ -551,7 +573,7 @@ footer {
     height: 44rem;
   }
 
-  .sick-text-2 {
+  .sick-text-2-group {
     /* dis japanese */
     top: 20rem;
   }
@@ -569,7 +591,7 @@ footer {
     height: 44rem;
   }
 
-  .sick-text-2 {
+  .sick-text-2-group {
     /* dis japanese */
     top: 20rem;
   }
@@ -589,14 +611,14 @@ footer {
     height: 38rem;
   }
 
-  .sick-text-2 {
+  .sick-text-2-group {
     position: absolute;
     top: 16rem;
   }
 
-  .sick-text-3 {
+  .sick-text-3-group {
     padding: 0 1rem;
-    font-size: 7.9vw;
+    font-size: 7.7vw;
   }
 
   #concert-cta {
@@ -618,13 +640,13 @@ footer {
     height: 34rem;
   }
 
-  .sick-text-2 {
+  .sick-text-2-group {
     position: absolute;
     top: 15rem;
     font-size: 12vw;
   }
 
-  .sick-text-3 {
+  .sick-text-3-group {
     font-size: 7.5vw;
   }
 
@@ -647,46 +669,43 @@ footer {
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 800px) {
   #hero.big-video {
-    height: 70vh;
-    min-height: 50rem;
+    height: 50vw;
+    min-height: 44rem;
   }
 
-  .sick-text-1 {
+  .sick-text-1-group {
     display: none;
   }
 
-  .sick-text-1-mobile {
+  .sick-text-1-mobile-group {
     display: inline-block;
     position: absolute;
     font-size: 36vw;
     text-align: right;
     top: 0;
     right: 0;
-    transition: opacity 400ms;
-    opacity: 100%;
-    color: white;
   }
-
-  .sick-text-1-mobile:hover {
-    opacity: 0;
-  }
-
+  
   #sick-text-1-mobile-copy {
-    color: white;
+    color: transparent;
     position: absolute;
     top: 0;
     right: 0;
     text-align: right;
+    transition: color 400ms;
   }
 
-  .sick-text-2 {
+  #sick-text-1-mobile-copy:hover {
+    color: white;
+  }
+
+  .sick-text-2-group {
     position: absolute;
-    top: 35vw;
-    left: 0;
-
+    top: 40vw;
+    left: 3rem;
   }
 
-  .sick-text-3 {
+  .sick-text-3-group {
     padding: 0 1rem;
     font-size: 7.6vw;
     bottom: 3rem;
@@ -739,6 +758,7 @@ footer {
   #final-cta {
     #cta {
       padding-left: 8rem;
+      width: 50%;
     }
 
     .cta-text {}
@@ -748,29 +768,35 @@ footer {
 
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 660px) {
-  .sick-text-1-mobile {
-    font-size: 36vw;
+  #hero.big-video {
+    height: 50vh;
+    min-height: 40rem;
   }
 
-  .sick-text-2 {
+  .sick-text-1-mobile {
+    font-size: 31vw;
+  }
+
+  /* .sick-text-2-group {
     position: absolute;
     top: 34vw;
-  }
+  } */
 
-  .sick-text-3 {
+  .sick-text-3-group {
     padding: 0 1rem;
-    font-size: 14vw;
+    font-size: 7vw;
   }
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
 @media (max-width: 512px) {
   #hero.big-video {
-    height: 80vh;
-    min-height: 42rem;
+    min-height: 20rem;
+    height: 60vh;
+    max-height: 32rem;
   }
 
-  .sick-text-1 {
+  .sick-text-1-group {
     display: none;
   }
 
@@ -778,11 +804,12 @@ footer {
     font-size: 40vw;
   }
 
-  .sick-text-2 {
+  .sick-text-2-group {
     top: 38vw;
+    left: 0;
   }
 
-  .sick-text-3 {
+  .sick-text-3-group {
     bottom: 3rem;
   }
 
@@ -802,12 +829,14 @@ footer {
     padding: 4rem 2rem;
 
     #band-grid {
-
       .member-component {
-
         .image-and-overlaid-text {
           display: flex;
           justify-content: center;
+        }
+
+        .social-links {
+          gap: 0.4rem;
         }
       }
     }
@@ -825,8 +854,18 @@ footer {
 }
 
 @media (max-width: 420px) {
-  .sick-text-2 {
+  #hero.big-video {
+    height: 50vh;
+    min-height: 30rem;
+  }
+
+  .sick-text-2-group {
     font-size: 15vw;
+  }
+
+  .sick-text-3-group {
+    font-size: 7vw;
+    bottom: 4rem;
   }
 
   #concert-cta {
