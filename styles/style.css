@@ -395,6 +395,7 @@ a {
   color: #ddd;
   transition: transform 300ms;
   max-width: 15rem;
+  cursor: pointer;
 }
 
 .cta-button:hover {
