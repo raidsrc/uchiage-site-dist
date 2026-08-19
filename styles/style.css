@@ -63,6 +63,10 @@ a {
   color: white;
 }
 
+button {
+  cursor: pointer;
+}
+
 #en-jp-switch {
   font-size: 0.8rem;
   text-align: center;
@@ -395,7 +399,6 @@ a {
   color: #ddd;
   transition: transform 300ms;
   max-width: 15rem;
-  cursor: pointer;
 }
 
 .cta-button:hover {
