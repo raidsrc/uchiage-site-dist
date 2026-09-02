@@ -70,9 +70,8 @@ button {
 #en-jp-switch {
   font-size: 0.8rem;
   text-align: center;
-  /* display: flex; */
-  display: none; 
-  /* for now hide it. i'll reactivate it when i get a translation for the copy */
+  display: flex;
+  /* display: none;  */
 
   .en-jp-text {
     position: relative;
